@@ -1,29 +1,51 @@
-Clone the project
-First do you need its clone the project of github from this link https://github.com/JACClockdown/task.git
-after that you need run enviroment 
+TASK PROJECT - BACKEND SETUP
+===========================
 
-# Activate Virtual Env
-# Windows: venv\Scripts\activate
-# Mac/Linux: source venv/bin/activate
+This document describes the steps required to set up and run the Task
+backend project locally using Django.
 
-Move to de Config folder 
+--------------------------------------------------
+1. Clone the Repository
+--------------------------------------------------
+
+First, clone the project from GitHub:
+
+git clone https://github.com/JACClockdown/task.git
+
+Navigate into the project directory:
+
+cd task
+
+--------------------------------------------------
+2. Activate Virtual Environment
+--------------------------------------------------
+
+Make sure you have Python installed and activate the virtual environment.
+
+Windows:
+venv\Scripts\activate
+
+Mac / Linux:
+source venv/bin/activate
+
+--------------------------------------------------
+3. Project Configuration
+--------------------------------------------------
+
+Move to the configuration folder:
+
 cd config
 
-Then you need run this command inside Virtual Enviroment
+--------------------------------------------------
+4. Install Dependencies
+--------------------------------------------------
+
+Inside the virtual environment, install the required dependencies:
+
 pip install django djangorestframework djangorestframework-simplejwt mysqlclient pytest pytest-django
 
-After that you need run this commands
+-----------------------------------
 
-# Create migrations
-python manage.py makemigrations
-
-# Apply migrations
-python manage.py migrate
-
-# Inicialize category
-python manage.py init_categorias
-
-# Create superuser (optional)
 python manage.py createsuperuser
 
 # Execute server
